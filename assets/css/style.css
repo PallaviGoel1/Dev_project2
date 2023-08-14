@@ -1,5 +1,10 @@
 body
 {
-    background-image: red;
+    background-color: #76a52a;
 }
     
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: horizontal; /* Centers content horizontally */
+  }
