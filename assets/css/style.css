@@ -3,8 +3,12 @@ body
     background-color: #76a52a;
 }
     
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: horizontal; /* Centers content horizontally */
+/* header image in center*/
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
+  
