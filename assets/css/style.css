@@ -1,4 +1,22 @@
-
+/* dice count function*/
+#dis-count
+    {
+      display: grid;
+      place-items: center;
+      position: absolute;
+      top: 200px;
+      left: 120px;
+      font-size: 2rem;
+      z-index: 99;
+    }
+    #dis-btn {
+      z-index: 99;
+      padding: 15px;
+      cursor: pointer;
+      background-color: rgb(75, 140, 197);
+      border-radius: 15px;
+      width: 300px;
+    }
 .g-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
