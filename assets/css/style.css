@@ -1,8 +1,9 @@
-/* dice count function*/
+
+/* id dice count function(game.html)*/
 #dis-count
     {
-      display: grid;
-      place-items: center;
+      
+      place-items: left;
       position: absolute;
       top: 200px;
       left: 120px;
@@ -14,14 +15,16 @@
       z-index: 99;
       padding: 15px;
       cursor: pointer;
-      background-color: rgb(75, 140, 197);
+      background-color: rgb(103, 141, 173);
       border-radius: 15px;
       width: 300px;
   }
+
+  /*classes function for grid (game.html)*/
 .g-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background-color: #d2e2ef;
+  background-color: #f9fbfd;
   width: 600px;
 }
 .g-item {
@@ -30,6 +33,9 @@
   width:60px;
   height:60px;
 }
+
+/*i class for Game.html img*/
+
 .i {
   position: relative;
   top: -615px;
@@ -39,7 +45,8 @@
   width: 620px;
   height: 620px;
 }
-/* header image in center*/
+
+/* header image in center(index.html)*/
 
 .center {
   display: block;
@@ -51,7 +58,8 @@
   .centertext{
     text-align: center;
   }
-/* snacks and laderd pic fix right nd left side*/
+
+/* snacks and laderd pic fix right nd left side(index.html)*/
   #left-about {
 		padding-top: 50px;
 		width: 0%;
