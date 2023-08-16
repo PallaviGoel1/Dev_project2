@@ -1,26 +1,33 @@
-body
-{
-    
-    display: grid;
-    place-items: center;
-}
-   
-.count
-{
+
+.g-container {
   display: grid;
-  grid-template-columns: repeat (10,10);
-  width:500px;
-
-
+  grid-template-columns: repeat(10, 1fr);
+  background-color: #d2e2ef;
+  width: 600px;
+}
+.g-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(239, 191, 191, 0.8);
+  width:60px;
+  height:60px;
+}
+.i {
+  position: relative;
+  top: -615px;
+  left: 1px;
+  /* z-index: -1; if i add this function then image below and grid above show*/
+  margin: 0;
+  width: 620px;
+  height: 620px;
 }
 /* header image in center*/
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
   }
   .centertext{
     text-align: center;
