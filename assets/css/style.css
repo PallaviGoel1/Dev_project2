@@ -34,17 +34,48 @@
   height:60px;
 }
 
-/*i class for Game.html img*/
+#player1,
+#player2 
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(236, 82, 82);
+  position: relative;
+  border: 3px ;
+}
+#player1
+{
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  z-index: 2;
+  top: 0px;
+  left: -62px;
+  transition: all linear 0.5s;
+}
+#player2
+{
+  position: relative;
+  background-color: blue;
+  cursor: pointer;
+  z-index: 2;
+  top: -55px;
+  left: -62px;
+  transition: all linear 0.5s;
+}
+
+/*i class for Game.html img
 
 .i {
   position: relative;
   top: -615px;
   left: 1px;
-  /* z-index: -1; if i add this function then image below and grid above show*/
+  /* z-index: -1; if i add this function then image below and grid above show
   margin: 0;
   width: 620px;
   height: 620px;
-}
+}*/
 
 /* header image in center(index.html)*/
 
