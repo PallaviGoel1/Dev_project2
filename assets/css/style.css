@@ -32,12 +32,15 @@
   .centertext{
     text-align: center;
   }
+/* snacks and laderd pic fix right nd left side*/
+  #left-about {
+		padding-top: 50px;
+		width: 0%;
+		float: left;
+	}
 
-  /*game rollright*/
-  div.b {
-    position: absolute;
-    right: 0;
-    width: 100px;
-    height: 120px;
-    border: 3px solid blue;
-  }
+	#right-about {
+		padding-top: 30px;
+		width: 20%;
+		float: right;
+	}
