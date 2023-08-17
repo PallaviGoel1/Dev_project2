@@ -2,36 +2,47 @@
 /* id dice count function(game.html)*/
 #dis-count
     {
-      
-      place-items: left;
+      display: grid;
+      place-items: center;
       position: absolute;
       top: 200px;
       left: 120px;
       font-size: 2rem;
       z-index: 99;
     }
-  #dis-btn 
+  #disBtn 
   {
       z-index: 99;
-      padding: 15px;
+      padding: 5px;
       cursor: pointer;
       background-color: rgb(103, 141, 173);
-      border-radius: 15px;
-      width: 300px;
+      border-radius: 5px;
+      width: 200px;
   }
 
   /*classes function for grid (game.html)*/
 .g-container {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  background-color: #f9fbfd;
-  width: 600px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      background-color: #b2d3f5;
+      width: 620px;
+      margin: 0px 0 0px 0;
 }
-.g-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(239, 191, 191, 0.8);
-  width:60px;
-  height:60px;
+.g-container div
+{
+    width: 50px;
+    height: 50px;
+    border: 0.2px solid black;
+}
+.g-item 
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(239, 191, 191, 0.8);
+    width:57px;
+    height: 57px;
+    text-align: center;
+    float:left;
+
 }
 
 #player1,
@@ -42,15 +53,14 @@
   border-radius: 100px;
   background-color: rgb(236, 82, 82);
   position: relative;
-  border: 3px ;
+  border: 3px solid black;
 }
 #player1
 {
   position: relative;
-  text-align: left;
   cursor: pointer;
   z-index: 2;
-  top: 0px;
+  top: 40px;
   left: -62px;
   transition: all linear 0.5s;
 }
@@ -64,18 +74,17 @@
   left: -62px;
   transition: all linear 0.5s;
 }
-
-/*i class for Game.html img
+/*i class for Game.html img*/
 
 .i {
   position: relative;
   top: -615px;
   left: 1px;
-  /* z-index: -1; if i add this function then image below and grid above show
+  /* z-index: -3; if i add this function then image below and grid above show*/
   margin: 0;
   width: 620px;
   height: 620px;
-}*/
+}
 
 /* header image in center(index.html)*/
 

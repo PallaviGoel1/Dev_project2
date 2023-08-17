@@ -9,7 +9,6 @@
     <title>Snacks & Ladder Game !!</title>
     <style>
         body{
-            
             background-color: green;
             place-items: center;
             display: grid;
@@ -27,119 +26,122 @@
    <h1>Snakes and ladder</h1>
 
     <div id="dis-count">
-        <h2>Player1</h2>
-        <h2>0</h2>
+        <h2 id="turn">Player1</h2>
+        <h2 id="dice">0</h2>
         <button id="disBtn">Rolling Dice numbers</button>
     </div>
 
     <div class="g-container">
         
-        <div class="g-item" id="a100"></div>
-        <div class="g-item" id="a99"></div>
-        <div class="g-item" id="a98"></div>  
-        <div class="g-item" id="a97"></div>
-        <div class="g-item" id="a96"></div>
-        <div class="g-item" id="a95"></div>  
-        <div class="g-item" id="a94"></div>
-        <div class="g-item" id="a93"></div>
-        <div class="g-item" id="a92"></div>
-        <div class="g-item">91</div>  
-        <div class="g-item">81</div>
-        <div class="g-item">82</div>
-        <div class="g-item">83</div>  
-        <div class="g-item">84</div>
-        <div class="g-item">85</div>
-        <div class="g-item">86</div>  
-        <div class="g-item">87</div>
-        <div class="g-item">88</div>
-        <div class="g-item">89</div>  
-        <div class="g-item">90</div> 
-        <div class="g-item">80</div>
-        <div class="g-item">79</div>
-        <div class="g-item">78</div>  
-        <div class="g-item">77</div>
-        <div class="g-item">76</div>
-        <div class="g-item">75</div>  
-        <div class="g-item">74</div>
-        <div class="g-item">73</div>
-        <div class="g-item">72</div>
-        <div class="g-item">71</div> 
-        <div class="g-item">61</div>
-        <div class="g-item">62</div>
-        <div class="g-item">63</div>  
-        <div class="g-item">64</div>
-        <div class="g-item">65</div>
-        <div class="g-item">66</div>  
-        <div class="g-item">67</div>
-        <div class="g-item">68</div>
-        <div class="g-item">69</div>
-        <div class="g-item">70</div>  
-        <div class="g-item">60</div>
-        <div class="g-item">59</div>
-        <div class="g-item">58</div>  
-        <div class="g-item">57</div>
-        <div class="g-item">56</div>
-        <div class="g-item">55</div>  
-        <div class="g-item">54</div>
-        <div class="g-item">53</div>
-        <div class="g-item">52</div>
-        <div class="g-item">51</div>  
-        <div class="g-item">41</div>
-        <div class="g-item">42</div>
-        <div class="g-item">43</div>  
-        <div class="g-item">44</div>
-        <div class="g-item">45</div>
-        <div class="g-item">46</div>  
-        <div class="g-item">47</div>
-        <div class="g-item">48</div>
-        <div class="g-item">49</div>
-        <div class="g-item">50</div>  
-        <div class="g-item">40</div>
-        <div class="g-item">39</div>
-        <div class="g-item">38</div>  
-        <div class="g-item">37</div>
-        <div class="g-item">36</div>
-        <div class="g-item">35</div>  
-        <div class="g-item">34</div>
-        <div class="g-item">33</div>
-        <div class="g-item">32</div>
-        <div class="g-item">31</div>  
-        <div class="g-item">21</div>
-        <div class="g-item">22</div>
-        <div class="g-item">23</div>  
-        <div class="g-item">24</div>
-        <div class="g-item">25</div>
-        <div class="g-item">26</div>  
-        <div class="g-item">27</div>
-        <div class="g-item">28</div>
-        <div class="g-item">29</div>
-        <div class="g-item">30</div>  
-        <div class="g-item">20</div>
-        <div class="g-item">19</div>
-        <div class="g-item">18</div>  
-        <div class="g-item">17</div>
-        <div class="g-item">16</div>
-        <div class="g-item">15</div>  
-        <div class="g-item">14</div>
-        <div class="g-item">13</div>
-        <div class="g-item">12</div>
-        <div class="g-item">11</div>  
-        <div class="g-item">1</div>
-        <div class="g-item">2</div>
-        <div class="g-item">3</div>  
-        <div class="g-item">4</div>
-        <div class="g-item">5</div>
-        <div class="g-item">6</div>  
-        <div class="g-item">7</div>
-        <div class="g-item">8</div>
-        <div class="g-item">9</div>
-        <div class="g-item">10</div>     
+        <div class="g-item" id="a100">100</div>
+        <div class="g-item" id="a99">99</div>
+        <div class="g-item" id="a98">98</div>  
+        <div class="g-item" id="a97">97</div>
+        <div class="g-item" id="a96">96</div>
+        <div class="g-item" id="a95">95</div>  
+        <div class="g-item" id="a94">94</div>
+        <div class="g-item" id="a93">93</div>
+        <div class="g-item" id="a92">92</div>
+        <div class="g-item" id="a91">91</div>  
+        <div class="g-item" id="a81">81</div>
+        <div class="g-item" id="a82">82</div>
+        <div class="g-item" id="a83">83</div>  
+        <div class="g-item" id="a84">84</div>
+        <div class="g-item" id="a85">85</div>
+        <div class="g-item" id="a86">86</div>  
+        <div class="g-item" id="a87">87</div>
+        <div class="g-item" id="a88">88</div>
+        <div class="g-item" id="a89">89</div>  
+        <div class="g-item" id="a90">90</div> 
+        <div class="g-item" id="a80">80</div>
+        <div class="g-item" id="a79">79</div>
+        <div class="g-item" id="a78">78</div>  
+        <div class="g-item" id="a77">77</div>
+        <div class="g-item" id="a76">76</div>
+        <div class="g-item" id="a75">75</div>  
+        <div class="g-item" id="a74">74</div>
+        <div class="g-item" id="a73">73</div>
+        <div class="g-item" id="a72">72</div>
+        <div class="g-item" id="a71">71</div> 
+        <div class="g-item" id="a61">61</div>
+        <div class="g-item" id="a62">62</div>
+        <div class="g-item" id="a63">63</div>  
+        <div class="g-item" id="a64">64</div>
+        <div class="g-item" id="a65">65</div>
+        <div class="g-item" id="a66">66</div>  
+        <div class="g-item" id="a67">67</div>
+        <div class="g-item" id="a68">68</div>
+        <div class="g-item" id="a69">69</div>
+        <div class="g-item" id="a70">70</div>  
+        <div class="g-item" id="a60">60</div>
+        <div class="g-item" id="a59">59</div>
+        <div class="g-item" id="a58">58</div>  
+        <div class="g-item" id="a57">57</div>
+        <div class="g-item" id="a56">56</div>
+        <div class="g-item" id="a55">55</div>  
+        <div class="g-item" id="a54">54</div>
+        <div class="g-item" id="a53">53</div>
+        <div class="g-item" id="a52">52</div>
+        <div class="g-item" id="a51">51</div>  
+        <div class="g-item" id="a41">41</div>
+        <div class="g-item" id="a42">42</div>
+        <div class="g-item" id="a43">43</div>  
+        <div class="g-item" id="a44">44</div>
+        <div class="g-item" id="a45">45</div>
+        <div class="g-item" id="a46">46</div>  
+        <div class="g-item" id="a47">47</div>
+        <div class="g-item" id="a48">48</div>
+        <div class="g-item" id="a49">49</div>
+        <div class="g-item" id="a50">50</div>  
+        <div class="g-item" id="a40">40</div>
+        <div class="g-item" id="a39">39</div>
+        <div class="g-item"id="a38">38</div>  
+        <div class="g-item" id="a37">37</div>
+        <div class="g-item" id="a36">36</div>
+        <div class="g-item" id="a35">35</div>  
+        <div class="g-item" id="a34">34</div>
+        <div class="g-item" id="a33">33</div>
+        <div class="g-item" id="a32">32</div>
+        <div class="g-item" id="a31">31</div>  
+        <div class="g-item" id="a21">21</div>
+        <div class="g-item" id="a22">22</div>
+        <div class="g-item" id="a23">23</div>  
+        <div class="g-item" id="a24">24</div>
+        <div class="g-item" id="a25">25</div>
+        <div class="g-item" id="a26">26</div>  
+        <div class="g-item" id="a27">27</div>
+        <div class="g-item" id="a28">28</div>
+        <div class="g-item" id="a29">29</div>
+        <div class="g-item" id="a30">30</div>  
+        <div class="g-item" id="a20">20</div>
+        <div class="g-item" id="a19">19</div>
+        <div class="g-item" id="a18">18</div>  
+        <div class="g-item" id="a17">17</div>
+        <div class="g-item" id="a16">16</div>
+        <div class="g-item" id="a15">15</div>  
+        <div class="g-item" id="a14">14</div>
+        <div class="g-item" id="a13">13</div>
+        <div class="g-item" id="a12">12</div>
+        <div class="g-item" id="a11">11</div> 
+
+         <p id="player1">p1</p>
+         <p id="player2">p2</p>
+
+        <div class="g-item" id="a01">1</div>
+        <div class="g-item" id="a02">2</div>
+        <div class="g-item" id="a03">3</div>  
+        <div class="g-item" id="a04">4</div>
+        <div class="g-item" id="a05">5</div>
+        <div class="g-item" id="a06">6</div>  
+        <div class="g-item" id="a07">7</div>
+        <div class="g-item" id="a08">8</div>
+        <div class="g-item" id="a09">9</div>
+        <div class="g-item" id="a10">10</div>  
         
     </div>
    
-        <!--    <img class="i" src="assets/images/360_F_243177601_1hKMvUuJ4dxbfeNG5Qrcf0WfLKQboYbg.jpg" alt="snacks & ladders pic" width="620px" height="620px"> --> 
-    <p id="player1">player1</p>
-    <p>player2</p>
+        <img class="i" src="assets/images/360_F_243177601_1hKMvUuJ4dxbfeNG5Qrcf0WfLKQboYbg.jpg" alt="snacks & ladders pic">
+    
          <script src="assets/js/script.js"></script> 
 </body>
 </html>
