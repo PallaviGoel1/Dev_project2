@@ -6,14 +6,16 @@ let p;
 
     function startgame(player, p, turn, num)
     {
-    let sum    
+    var sum    
        
-        if (p=='player1')
-            {
+        if (p=='player1'){
             p1=p1+num;
 
-        if(p1>100)
-            {
+        if(p1>100){
+            p1=p1-num;
+        }
+       
+        {
                 if (p1 == 1) {
                     p1 = 38
                 }
@@ -44,8 +46,8 @@ let p;
                 if (p1 == 62) {
                     p1 = 18
                 }
-                if (p1sum == 71) {
-                    p1sum = 92
+                if (p1 == 71) {
+                    p1 = 92
                 }
                 if (p1== 80) {
                     p1 = 99
@@ -62,16 +64,26 @@ let p;
         
                 sum = p1
         
-            }
+         }
                 
-    
-    }    
+    }
+       
         document.getElementById(`${player}`).style.transition = `linear all .5s`
         
         if (sum<10)
             {
                 document.getElementById(`${player}`).style.left = `${(sum - 1) * 62}px`
                 document.getElementById(`${player}`).style.top = `${-0 * 62 - turn}px`
+                
+            }
+            else if (sum == 100) {
+                /*winSound.play()*/
+                if (player == 'p1') {
+                    alert("Player1 Won !!")
+                }
+                else if (player == 'p2') {
+                    alert("Player2 Won !!")
+                }
                 location.reload()
             }
             
@@ -80,8 +92,8 @@ let p;
                 numarr = Array.from(String(sum))
                 n1 = eval(numarr.shift())
                 n2 = eval(numarr.pop())
-            }
-    } 
+            
+    
 
         if (n1 % 2 != 0) 
     {
@@ -97,7 +109,7 @@ let p;
 
             }
 
-            }
+    }
         else if (n1 % 2 == 0) 
         {
             if (n2 == 0) {
@@ -112,7 +124,8 @@ let p;
             }
         
         }
-
+    }
+}
     
 
     document.getElementById("disBtn").addEventListener("click", function () 
@@ -130,7 +143,8 @@ let p;
         {
             document.getElementById("turn").innerText='Player2';
             turn=0;
-            startgame('player2', 'p2', 55, num);
+            startgame('player2', 'p2', 0, num);
         }
+        turn=turn+1;
         
 })
