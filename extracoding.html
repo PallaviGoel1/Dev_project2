@@ -102,3 +102,20 @@
     <div class="g-item">1</div>     
     
 </div>
+
+
+function startgame()
+
+    if (p1=='player1')
+    {
+    p1=p1+num;
+
+        if(p1>100)
+         {
+        p1=p1-num;
+         }
+    
+    }
+    num=num+1;
+    
+        document.getElementById(`${player}`).style.transition = `linear all .5s`
