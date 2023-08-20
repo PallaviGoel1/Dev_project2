@@ -13,39 +13,41 @@
             background-color: rgb(248, 238, 49);
 
         }
-       h3, ol, footer
+       h3, ol
             {
                 background-color: lightgrey;
-                width: 300px;
-                border: 15px solid green;
+                width: 50%;
+                border: 5px solid green;
                 padding: 50px;
-                margin: auto;
-                text-align: center;
+                margin-left: 0;
+                text-align:left;
                 color: rgb(14, 14, 150);
+                
             }
+
     </style>
 
 </head>
 
 <body>
-    <div id="left-about">
-        <img src="assets/images/download1.png" alt="pic">
-    </div>
-    
-    <div id="right-about">
-        <img src="assets/images/download1.png" alt="pic">
-    </div>
     
     <h1>
           <image src="assets/images/logo1.png" alt="headerpic" width="900" height="179" class="center" >
-     </h1>
+    </h1>
      
-     <h2 class="centertext">WELCOME To THE GAME</h2>
+    <h2 class="centertext">WELCOME To THE GAME</h2>
+       <!-- <div id="left-about">
+            <img src="assets/images/download1.png" alt="snackandladderpic">
+        </div>
 
+        <div id="right-about">
+            <img src="assets/images/download1.png" alt="snackandladderpic">
+        </div>-->
      
         <div>
-            <h3>How TO PLAY </h3>
+         <!--  <h3>How TO PLAY </h3>--> 
                 <ol> 
+                    <h2 style="text-align: center;">How To Play</h2>
                     <li>Before starting the game, decide the order of the players and counters. 
                     Then each player will roll a dice according to the order.</li> 
 
@@ -63,11 +65,10 @@
                     <li>If you get 6 on the dice, you will get an extra turn. First, move your counter 6 steps forward and then roll the dice again.</li>
 
                     <li>The first player who reaches the highest number on the board (Number 100) </li>
-                </ol>         
+                    <a href="game.html" class="button"><h2 style="text-align: center;margin:auto;">Start Game</h2></a> 
+                </ol>  
+                      
         </div>
-    <footer>
-        <a href="game.html" class="button"><h2>Start Game</h2></a>
-    </footer>   
     
     <script src="assets/js/script.js"></script>
 </body>
