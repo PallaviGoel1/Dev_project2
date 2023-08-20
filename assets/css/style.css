@@ -60,8 +60,8 @@
   background-color: rgb(236, 82, 82);
   cursor: pointer;
   z-index: 2;
-  top: 40px;
-  left: -62px;
+  top: -75px;
+  left: -341px;
   transition: all linear 0.5s;
 }
 #player2
@@ -70,22 +70,39 @@
   background-color: blue;
   cursor: pointer;
   z-index: 2;
-  top: 40px;
-  left: -62px;
+  top: -75px;
+  left: -341px;
   transition: all linear 0.5s;
 }
 /*i class for Game.html img*/
 
 .i {
   position: relative;
-  top: -615px;
-  left: 1px;
-  /* z-index: -3; if i add this function then image below and grid above show*/
-  margin: 0;
+  top: 0px;
+  left: 0px;
+  z-index: 2; /*if i add this function then image below and grid above show*/
+  margin: 0px;
   width: 620px;
   height: 620px;
+  background-size: 620px 620px;
+  background-repeat: no-repeat;
 }
-
+/*
+.boardbox
+{
+  height:62px;
+  width:62px;
+  z-index:-1;
+}
+.left
+{
+  float:left;
+}
+.right
+{
+  float:right;
+}
+*/
 /* header image in center(index.html)*/
 
 .center {

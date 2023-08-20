@@ -7,7 +7,21 @@ var ch_pos
 
 function startgame(player, p, turn, num)
     {
-    var sum;
+        /*
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box100'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box99'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box98'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box97'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box96'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box95'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box94'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box93'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box92'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox left' id='box91'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox right' id='box90'></div>"
+        document.getElementById("i").innerHTML+="<div class='boardbox right' id='box89'></div>"
+        */
+        var sum;
     if (p=='p1')
         {
         p1 = p1 + num;
@@ -25,8 +39,13 @@ function startgame(player, p, turn, num)
     document.getElementById(`${player}`).style.transition = `linear all .5s`
     if (sum < 10)
         {
-        document.getElementById(`${player}`).style.left = `${(sum - 1) * 62}px`
-        document.getElementById(`${player}`).style.top = `${-0 * 62 - turn}px`   
+        /*
+        var s=document.getElementById(player);
+        document.getElementById("box97").appendChild(s); 
+        */
+        //document.getElementById(`${player}`).style.left = `${(sum-1)*62}px`
+        document.getElementById(`${player}`).style.left = `${(sum * 62) - 341}px`
+        document.getElementById(`${player}`).style.top = `${-279}px`   
         }
     else if (sum == 100) 
         {
@@ -94,22 +113,22 @@ function check_pos(ch_pos)
         return (ch_pos); 
     }
 
-    document.getElementById("disBtn").addEventListener("click", function () 
-            {
-            num = Math.floor(Math.random() * 6 + 1)
-            document.getElementById("dice").innerHTML=num
+document.getElementById("disBtn").addEventListener("click", function () 
+    {
+    num = Math.floor(Math.random() * 6 + 1)
+    document.getElementById("dice").innerHTML=num
     
-            if(turn==0)
-                {
-                document.getElementById("turn").innerText='Player1';
-                turn =1;
-                startgame('player1', 'p1', 0, num);
-                }
-            else 
-                {
-                document.getElementById("turn").innerText='Player2';
-                turn =0;
-                startgame('player2', 'p2', 0, num);
-                }
-            }
-        )
+    if(turn==0)
+        {
+        document.getElementById("turn").innerText='Player1';
+        turn =1;
+        startgame('player1', 'p1', 0, num);
+        }
+    else 
+        {
+        document.getElementById("turn").innerText='Player2';
+        turn =0;
+        startgame('player2', 'p2', 1, num);
+        }
+    }
+)
