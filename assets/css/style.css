@@ -1,119 +1,103 @@
 
 /* id dice count function(game.html)*/
-#dis-count
-    {
-      display: grid;
-      place-items: center;
-      position: absolute;
-      top: 200px;
-      left: 120px;
-      font-size: 2rem;
-      z-index: 99;
-    }
+
+  #dis-count
+  {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 2rem;
+    z-index: 99;
+  }
+
   #disBtn 
   {
-      z-index: 99;
-      padding: 5px;
-      cursor: pointer;
-      background-color: rgb(103, 141, 173);
-      border-radius: 5px;
-      width: 200px;
+    z-index: 99;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(103, 141, 173);
+    border-radius: 5px;
+    width: 200px;
   }
 
-  /*classes function for grid (game.html)*/
-.g-container {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      background-color: #b2d3f5;
-      width: 620px;
-      margin: 0px 0 0px 0;
-}
-.g-container div
-{
-    width: 50px;
-    height: 50px;
-    border: 0.2px solid black;
-}
-.g-item 
-{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(239, 191, 191, 0.8);
-    width:57px;
-    height: 57px;
-    text-align: center;
+  #player1, #player2 
+  {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: relative;
+    border: 1px solid black;
+  }
+
+  #player1
+  {
+    position: relative;
+    background-color: rgb(236, 82, 82);
+    cursor: pointer;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    transition: all linear 0.5s;
+  }
+
+  #player2
+  {
+    position: relative;
+    background-color: blue;
+    cursor: pointer;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    transition: all linear 0.5s;
+  }
+
+  /*i class for Game.html img*/
+  .i 
+  {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2; /*if i add this function then image below and grid above show*/
+    margin-left: 30px;
+    width: 620px;
+    height: 620px;
+    background-size: 620px 620px;
+    background-repeat: no-repeat;
+    float: left;
+  }
+
+  /*
+  .boardbox
+  {
+    height:62px;
+    width:62px;
+    z-index:-1;
+  }
+
+  .left
+  {
     float:left;
-
-}
-
-#player1,
-#player2 
-{
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  position: relative;
-  border: 1px solid black;
-}
-#player1
-{
-  position: relative;
-  background-color: rgb(236, 82, 82);
-  cursor: pointer;
-  z-index: 2;
-  top: -75px;
-  left: -341px;
-  transition: all linear 0.5s;
-}
-#player2
-{
-  position: relative;
-  background-color: blue;
-  cursor: pointer;
-  z-index: 2;
-  top: -75px;
-  left: -341px;
-  transition: all linear 0.5s;
-}
-/*i class for Game.html img*/
-
-.i {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  z-index: 2; /*if i add this function then image below and grid above show*/
-  margin: 0px;
-  width: 620px;
-  height: 620px;
-  background-size: 620px 620px;
-  background-repeat: no-repeat;
-}
-/*
-.boardbox
-{
-  height:62px;
-  width:62px;
-  z-index:-1;
-}
-.left
-{
-  float:left;
-}
-.right
-{
-  float:right;
-}
-*/
-/* header image in center(index.html)*/
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  
   }
-  .centertext{
+
+  .right
+  {
+    float:right;
+  }
+  */
+
+  /* header image in center(index.html)*/
+  .center 
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .centertext
+  {
     text-align: center;
   }
-
-
+  
