@@ -5,6 +5,7 @@ var num;
 var p;
 var sum;
 var ch_pos;
+var temp;
 
 //Need to adjust as per media changes
 var lft = 0;
@@ -63,12 +64,14 @@ function startgame(player, p, turn, num)
         if ((sum%10)%2 == 0)
         {
             lft = x + (sum%10-1)*a;
-            tp = y-a*(MATH.FLOOR((sum-1)/10));
+            temp = Math.floor((sum-1)/10);
+            tp = y-a*temp;
         }
         else
         {
             lft = 10 - ((sum-1)%10+1)*a;
-            tp = y-a*(MATH.FLOOR((sum-1)/10));
+            temp = Math.floor((sum-1)/10);
+            tp = y-a*temp;
         }
         document.getElementById(`${player}`).style.left = `${lft}px`;
         document.getElementById(`${player}`).style.top = `${tp}px`;

@@ -101,3 +101,33 @@
     text-align: center;
   }
   
+/*media define */
+
+  @media (max-width: 1250px) {
+  
+    #diceCont {
+      display: flex;
+      place-items: none;
+      top: 92vh;
+      left: 36vw;
+      border: 2px solid red;
+    }
+    #diceBtn {
+      width: 200px;
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: 1250px) {
+    
+    #diceCont {
+      display: flex;
+      place-items: none;
+      top: 99vh;
+      left: 10vw;
+      /* border: 2px solid red; */
+    }
+    #diceBtn {
+      width: 200px;
+      margin-left: 20px;
+    }
+  }
