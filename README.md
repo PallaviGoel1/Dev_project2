@@ -1,4 +1,4 @@
-###Snakes & Ladders Game
+### Snakes & Ladders Game
 
 Snake and Ladder is a old board game being played in various part of world. It is a popular family game which can be enjoyed by any age group. 
 
