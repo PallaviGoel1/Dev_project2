@@ -70,7 +70,14 @@ function startgame(player, p, turn, num)
     {
         if ((Math.floor((sum-1)/10))%2 == 0)
         {
-            lft = x + (sum%10-1)*a;
+            if ((sum%10)==0)
+            {
+                lft = 10-a;
+            }
+            else
+            {
+                lft = x + (sum%10-1)*a;
+            }
             temp = Math.floor((sum-1)/10);
             tp = y-a*temp;
             console.log("temp =", temp);
