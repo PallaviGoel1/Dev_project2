@@ -1,17 +1,86 @@
+/*media define */
+h1 {font-size: small;}  
+h2 {font-size: small;}
+h3 {font-size: small;}
 
-/* id dice count function(game.html)*/
-
-  #dis-count
+#disBtn 
   {
-    display: grid;
-    place-items: center;
+    z-index: 99;
+    padding: 2px;
+    cursor: pointer;
+    background-color: rgb(103, 141, 173);
+    border-radius: 2px;
+    width: 50px;
+  }
+
+  #player1, #player2 
+  {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid black;
+  }
+  /*i class for Game.html img*/
+  .i 
+  {
     position: relative;
     top: 0px;
     left: 0px;
-    font-size: 2rem;
-    z-index: 99;
+    z-index: 2; /*if i add this function then image below and grid above show*/
+    margin-left: 5px;
+    width: 300px;
+    height: 300px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    float: left;
   }
 
+@media (min-width: 500px) 
+{
+  h1 {font-size: medium;}  
+  h2 {font-size: medium;}
+  h3 {font-size: medium;}
+
+  #disBtn 
+  {
+    z-index: 99;
+    padding: 3px;
+    cursor: pointer;
+    background-color: rgb(103, 141, 173);
+    border-radius: 3px;
+    width: 100px;
+  }
+
+  #player1, #player2 
+  {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid black;
+  }
+  /*i class for Game.html img*/
+  .i 
+  {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2; /*if i add this function then image below and grid above show*/
+    margin-left: 10px;
+    width: 450px;
+    height: 450px;
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    float: left;
+  }
+}
+
+@media (min-width: 800px) 
+{
+  h1 {font-size: xx-large;}  
+  h2 {font-size: xx-large;}
+  h3 {font-size: xx-large;}
   #disBtn 
   {
     z-index: 99;
@@ -29,7 +98,33 @@
     border-radius: 100px;
     position: relative;
     border: 1px solid black;
-    
+  }
+  /*i class for Game.html img*/
+  .i 
+  {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2; /*if i add this function then image below and grid above show*/
+    margin-left: 30px;
+    width: 620px;
+    height: 620px;
+    background-size: 620px 620px;
+    background-repeat: no-repeat;
+    float: left;
+  }
+}
+
+/* id dice count function(game.html)*/
+#dis-count
+  {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 2rem;
+    z-index: 99;
   }
 
   #player1
@@ -54,21 +149,6 @@
     transition: all linear 0.5s;
   }
 
-  /*i class for Game.html img*/
-  .i 
-  {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 2; /*if i add this function then image below and grid above show*/
-    margin-left: 30px;
-    width: 620px;
-    height: 620px;
-    background-size: 620px 620px;
-    background-repeat: no-repeat;
-    float: left;
-  }
-
   /* header image in center(index.html)*/
   .center 
   {
@@ -83,33 +163,3 @@
     text-align: center;
   }
   
-/*media define */
-
-  @media (max-width: 1250px) {
-  
-    #diceCont {
-      display: flex;
-      place-items: none;
-      top: 92vh;
-      left: 36vw;
-      border: 2px solid red;
-    }
-    #diceBtn {
-      width: 200px;
-      margin-left: 20px;
-    }
-  }
-  @media (max-width: 1250px) {
-    
-    #diceCont {
-      display: flex;
-      place-items: none;
-      top: 99vh;
-      left: 10vw;
-      /* border: 2px solid red; */
-    }
-    #diceBtn {
-      width: 200px;
-      margin-left: 20px;
-    }
-  }

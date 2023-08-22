@@ -6,13 +6,28 @@ var p;
 var sum;
 var ch_pos;
 var temp;
-
-//Need to adjust as per media changes
 var colPos = 0;
 var rowPos = 0;
 var x = -610;
-var y = 255;
+var y = 330;
 var a = 62;
+var b = 10;
+
+//Need to adjust as per media changes
+if (window.matchMedia("(max-width: 500px)").matches)
+{
+    var x = -300;
+    var y = 140;
+    var a = 30;
+    var b = 4;
+}
+else if (window.matchMedia("(max-width: 800px)").matches)
+{
+    var x = -450;
+    var y = 270;
+    var a = 45;
+    var b = 7;
+}
 
 //This function will be called on click on Roll Dice to generate dice number for respective player
 function Roll_Dice()
@@ -87,7 +102,7 @@ function startgame(player, p, turn, num)
         }
         else
         {
-            colPos = 10 - ((sum-1)%10+1)*a;
+            colPos = b - ((sum-1)%10+1)*a;
             temp = Math.floor((sum-1)/10);
             rowPos = y-a*temp;
             console.log("else temp =",temp);
