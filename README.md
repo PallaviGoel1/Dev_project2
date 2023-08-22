@@ -1,8 +1,13 @@
-#Snakes & Ladders Game
-write some text about game 
+###Snakes & Ladders Game
+
+Snake and Ladder is a old board game being played in various part of world. It is a popular family game which can be enjoyed by any age group. 
+
+Usually it is played by 2 player with rotating turns each. Players move based on the number on dice, which each player has to roll at thier turn. There are snakes and ladders between cells on the board and if player fall on any of those, has to change position on board accordingly. Snakes do bite to move player from snake's mouth to tail and ladder help player climbing up to the top of ladder from base.
+
+This game is developed using HTML, CSS and JavaScript. 
 
 ![Response](media/) 
-### Validator Testing 
+## Validator Testing 
 
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
@@ -13,29 +18,35 @@ write some text about game
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+I did perform following tests on this game:
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+1. Functional Test: 
+    a- Detaied tests are performed to check if pages are functioning as expected and found that those are linked, oped correctly
+    b- Thorough tests are performed with players movement according to game rules and found few movements were not correct,
+        i- At few positions (10, 30, 50, 70, 90), player is moving out of the board - Fixed the issue and now player is moving correctly on the board
+        ii- Positions of ladders were not correct in some cases - Fixed the position change as per ladder position in all the cases
+        iii - Text for player1 and Player2 were not changing after each turn - Fixed that in text
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+2. GUI Test: Verified all the objects on screens are correctly displayed and readable
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+3. Screen Test: Pages are correctly visible in case of screen size changes - To be fixed
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+I fetched help for coding from tutorial provided by Code Institute, W3 Schools and Slack community.
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+Also the images are captured from open libraries available.
 
-### Content 
+## Media
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The photos used on the Home and Game page are from Google Images
 
-### Media
+## Next Step
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
+There are various ideas I can document right now to improvise this game website in future. For example
+1. Allow players to choose as who will start the game
+2. Allow players to choose their names to be displayed on the GUI
+3. Update game to be playable by more than 2 players
+4. Allow users to choose color the want to play with on the board
+5. Show player movement gradually

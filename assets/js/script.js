@@ -8,13 +8,13 @@ var ch_pos;
 var temp;
 
 //Need to adjust as per media changes
-var lft = 0;
-var tp = 0;
+var colPos = 0;
+var rowPos = 0;
 var x = -610;
 var y = 255;
 var a = 62;
 
-
+//This function will be called on click on Roll Dice to generate dice number for respective player
 function Roll_Dice()
 {
     num = Math.floor(Math.random() * 6 + 1);
@@ -34,6 +34,7 @@ function Roll_Dice()
     }
 }
 
+//This function will be called to move players postion on board
 function startgame(player, p, turn, num)
 {
     console.log("p top of startgame", p, "num", num);
@@ -72,37 +73,36 @@ function startgame(player, p, turn, num)
         {
             if ((sum%10)==0)
             {
-                lft = 10-a;
+                colPos = 10-a;
             }
             else
             {
-                lft = x + (sum%10-1)*a;
+                colPos = x + (sum%10-1)*a;
             }
             temp = Math.floor((sum-1)/10);
-            tp = y-a*temp;
+            rowPos = y-a*temp;
             console.log("temp =", temp);
-            console.log("top =", tp);
-            console.log("Left =", lft);
+            console.log("top =", rowPos);
+            console.log("Left =", colPos);
         }
         else
         {
-            lft = 10 - ((sum-1)%10+1)*a;
+            colPos = 10 - ((sum-1)%10+1)*a;
             temp = Math.floor((sum-1)/10);
-            tp = y-a*temp;
+            rowPos = y-a*temp;
             console.log("else temp =",temp);
-            console.log("else top =",tp);
-            console.log("else Left =", lft);
+            console.log("else top =",rowPos);
+            console.log("else Left =", colPos);
         }
-        document.getElementById(`${player}`).style.left = `${lft}px`;
-        document.getElementById(`${player}`).style.top = `${tp-turn*a}px`;
+        document.getElementById(`${player}`).style.left = `${colPos}px`;
+        document.getElementById(`${player}`).style.top = `${rowPos-turn*a}px`;
     }
 }
 
+//This function will be called to adjust players position according to Snakes and Ladders on board
 function check_pos(ch_pos)
     {
         if(ch_pos>100) {ch_pos=ch_pos-num};
-        console.log("check position value: ", ch_pos);
-        console.log("check num value: ", num);
         if (ch_pos == 1) {ch_pos = 38};
         if (ch_pos == 4) {ch_pos = 14};
         if (ch_pos == 9) {ch_pos = 31};

@@ -29,6 +29,7 @@
     border-radius: 100px;
     position: relative;
     border: 1px solid black;
+    
   }
 
   #player1
@@ -67,25 +68,6 @@
     background-repeat: no-repeat;
     float: left;
   }
-
-  /*
-  .boardbox
-  {
-    height:62px;
-    width:62px;
-    z-index:-1;
-  }
-
-  .left
-  {
-    float:left;
-  }
-
-  .right
-  {
-    float:right;
-  }
-  */
 
   /* header image in center(index.html)*/
   .center 
