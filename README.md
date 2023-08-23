@@ -1,8 +1,8 @@
 ### Snakes & Ladders Game
 
-Snake and Ladder is a old board game being played in various part of world. It is a popular family game which can be enjoyed by any age group. 
+Snake and Ladder is a old board game being played in various part of the world. It is a popular family game which can be enjoyed by any age group. 
 
-Usually it is played by 2 player with rotating turns each. Players move based on the number on dice, which each player has to roll at thier turn. There are snakes and ladders between cells on the board and if player fall on any of those, has to change position on board accordingly. Snakes do bite to move player from snake's mouth to tail and ladder help player climbing up to the top of ladder from base.
+Usually it is played by 2 players with rotating turns each. Players move based on the number of dice, which each player has to roll at their turn. There are snakes and ladders between cells on the board, and if a player falls on any of those, has to change position on the board accordingly. Snakes do bite to move a player from the snake's mouth to tail and ladder helps a player climbing up to the top of a ladder from the base.
 
 This game is developed using HTML, CSS and JavaScript. 
 
@@ -20,28 +20,28 @@ This game is developed using HTML, CSS and JavaScript.
 
 ## Testing 
 
-I did perform following tests on this game:
+I did perform the following tests on this game:
 
 1. Functional Test: 
-    a- Detaied tests are performed to check if pages are functioning as expected and found that those are linked, oped correctly
-    b- Thorough tests are performed with players movement according to game rules and found few movements were not correct,
-        i- At few positions (10, 30, 50, 70, 90), player is moving out of the board - Fixed the issue and now player is moving correctly on the board
+    a- Detaied tests are performed to check if pages are functioning as expected and found that those are linked, opened correctly
+    b- Thorough tests are performed with the player's movement according to game rules and found few movements were not correct,
+        i- At few positions (10, 30, 50, 70, 90), the player is moving out of the board - Fixed the issue and now the player is moving correctly on the board
         ii- Positions of ladders were not correct in some cases - Fixed the position change as per ladder position in all the cases
-        iii - Text for player1 and Player2 were not changing after each turn - Fixed that in text
+        iii - Text for player1 and Player2 were not changed after each turn - Fixed that in the text
 
 2. GUI Test: Verified all the objects on screens are correctly displayed and readable. 
 
 3. Screen Test: Following issues noticed
-    a- Players movement on mobile was going out of board - Fixed that
-    b- Logo on index page is stretching on different screens - To be fixed
-    c- Pages are correctly visible in case of screen size changes - To be fixed
+    a- Player movement on mobile was going out of the board - Fixed
+    b- Logo on the index page is stretching on different screens - Fixed
+    c- Pages are correctly visible in case of screen size changes - Fixed
 
  ![Response](assets/images/Screenshot%202023-08-23%20115821.png)
 ## Credits 
 
 I fetched help for coding from tutorial provided by Code Institute, W3 Schools and Slack community.
 
-Also the images are captured from open libraries available.
+Also, the images are captured from open libraries available.
 
 ## Media
 
