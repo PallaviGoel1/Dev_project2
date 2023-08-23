@@ -9,7 +9,7 @@ var temp;
 var colPos = 0;
 var rowPos = 0;
 var x = -610;
-var y = 170;
+var y = 195;
 var a = 62;
 var b = 10;
 
@@ -119,23 +119,23 @@ function startgame(player, p, turn, num)
 //This function will be called to adjust players position according to Snakes and Ladders on board
 function check_pos(ch_pos)
     {
-        if(ch_pos>100) {ch_pos=ch_pos-num};
-        if (ch_pos == 1) {ch_pos = 38};
-        if (ch_pos == 4) {ch_pos = 14};
-        if (ch_pos == 9) {ch_pos = 31};
-        if (ch_pos == 17) {ch_pos = 7};
-        if (ch_pos == 21) {ch_pos = 42};
-        if (ch_pos == 28) {ch_pos = 84};
-        if (ch_pos == 51) {ch_pos = 67};
-        if (ch_pos == 54) {ch_pos = 34};
-        if (ch_pos == 62) {ch_pos = 19};
-        if (ch_pos == 64) {ch_pos = 60};
-        if (ch_pos == 71) {ch_pos = 91};
-        if (ch_pos == 80) {ch_pos = 100};
-        if (ch_pos == 87) {ch_pos = 24};
-        if (ch_pos == 93) {ch_pos = 73};
-        if (ch_pos == 95) {ch_pos = 75};
-        if (ch_pos == 98) {ch_pos = 79};
+        if(ch_pos>100) {ch_pos=ch_pos-num;}
+        if (ch_pos == 1) {ch_pos = 38;}
+        if (ch_pos == 4) {ch_pos = 14;}
+        if (ch_pos == 9) {ch_pos = 31;}
+        if (ch_pos == 17) {ch_pos = 7;}
+        if (ch_pos == 21) {ch_pos = 42;}
+        if (ch_pos == 28) {ch_pos = 84;}
+        if (ch_pos == 51) {ch_pos = 67;}
+        if (ch_pos == 54) {ch_pos = 34;}
+        if (ch_pos == 62) {ch_pos = 19;}
+        if (ch_pos == 64) {ch_pos = 60;}
+        if (ch_pos == 71) {ch_pos = 91;}
+        if (ch_pos == 80) {ch_pos = 100;}
+        if (ch_pos == 87) {ch_pos = 24;}
+        if (ch_pos == 93) {ch_pos = 73;}
+        if (ch_pos == 95) {ch_pos = 75;}
+        if (ch_pos == 98) {ch_pos = 79;}
         return (ch_pos); 
     }
 

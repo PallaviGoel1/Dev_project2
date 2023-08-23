@@ -4,60 +4,62 @@ body
 }
 
 /*media define */
+/*For Mobile*/
 h1 {font-size: small;}  
 h2 {font-size: small;}
 h3 {font-size: small;}
 
 ol
 {
-    background-color: rgb(155, 235, 179);
-    width: 45%;
-    border: 3px solid green;
-    padding: auto;
-    /*margin-right: auto;*/
-    text-align: auto;
-    margin: auto;
-    color: rgb(14, 14, 150);
-    font-size: 12px;
+  background-color: rgb(155, 235, 179);
+  width: 45%;
+  border: 3px solid green;
+  text-align: justify;
+  padding: 20px;
+  margin: auto;
+  color: rgb(14, 14, 150);
+  font-size: 12px;
 }
 
-#disBtn 
-  {
-    z-index: 99;
-    padding: 2px;
-    cursor: pointer;
-    background-color: rgb(156, 172, 187);
-    border-radius: 2px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: inline-block;
-    font-size: small;
-  }
+#disBtn , #exBtn
+{
+  z-index: 99;
+  padding: 2px;
+  cursor: pointer;
+  background-color: rgb(156, 172, 187);
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
 
-  #player1, #player2 
-  {
-    width: 15px;
-    height: 15px;
-    border-radius: 5px;
-    position: relative;
-    border: 1px solid black;
-  }
-  /*i class for Game.html img*/
-  .i 
-  {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 2; /*if i add this function then image below and grid above show*/
-    margin-left: 5px;
-    width: 300px;
-    height: 300px;
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
-    float: left;
-  }
+#player1, #player2 
+{
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid black;
+}
 
+/*i class for Game.html img*/
+.i 
+{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 2; /*if i add this function then image below and grid above show*/
+  margin-left: 5px;
+  width: 300px;
+  height: 300px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+/*For Tab*/
 @media (min-width: 500px) 
 {
   h1 {font-size: medium;}  
@@ -66,18 +68,18 @@ ol
 
   ol
   {
-      background-color: rgb(155, 235, 179);
-      width: 45%;
-      border: 5px solid green;
-      padding: auto;
-      margin-right: 20px;
-      text-align:auto;
-      margin: auto;
-      color: rgb(14, 14, 150);
-      font-size: 17px;
+    background-color: rgb(155, 235, 179);
+    width: 45%;
+    border: 5px solid green;
+    padding: 30px;
+    margin-right: 20px;
+    text-align: justify;
+    margin: auto;
+    color: rgb(14, 14, 150);
+    font-size: medium;
   }
 
-  #disBtn 
+  #disBtn, #exBtn
   {
     z-index: 99;
     padding: 3px;
@@ -99,13 +101,14 @@ ol
     position: relative;
     border: 1px solid black;
   }
+
   /*i class for Game.html img*/
   .i 
   {
     position: relative;
     top: 0px;
     left: 0px;
-    z-index: 2; /*if i add this function then image below and grid above show*/
+    z-index: 2;
     margin-left: 10px;
     width: 450px;
     height: 450px;
@@ -123,18 +126,18 @@ ol
 
   ol
   {
-      background-color: rgb(155, 235, 179);
-      width: 55%;
-      border: 5px solid green;
-      padding: auto;
-      margin-right: 20px;
-      text-align:auto;
-      margin: auto;
-      color: rgb(14, 14, 150);
-      font-size: 17px;
+    background-color: rgb(155, 235, 179);
+    width: 55%;
+    border: 5px solid green;
+    padding: 40px;
+    margin-right: 20px;
+    text-align: justify;
+    margin: auto;
+    color: rgb(14, 14, 150);
+    font-size: 17px;
   }
 
-  #disBtn 
+  #disBtn, #exBtn
   {
     z-index: 99;
     padding: 5px;
@@ -156,13 +159,14 @@ ol
     position: relative;
     border: 1px solid black;
   }
+
   /*i class for Game.html img*/
   .i 
   {
     position: relative;
     top: 0px;
     left: 0px;
-    z-index: 2; /*if i add this function then image below and grid above show*/
+    z-index: 2;
     margin-left: 30px;
     width: 620px;
     height: 620px;
@@ -172,51 +176,50 @@ ol
   }
 }
 
-/* id dice count function(game.html)*/
+/* id dice count function (game.html)*/
 #dis-count
-  {
-    display: grid;
-    place-items: center;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    font-size: 2rem;
-    z-index: 99;
-  }
+{
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-size: 2rem;
+  z-index: 99;
+}
 
-  #player1
-  {
-    position: relative;
-    background-color: rgb(236, 82, 82);
-    cursor: pointer;
-    z-index: 2;
-    top: 0px;
-    left: 0px;
-    transition: all linear 0.5s;
-  }
+#player1
+{
+  position: relative;
+  background-color: rgb(236, 82, 82);
+  cursor: pointer;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  transition: all linear 0.5s;
+}
 
-  #player2
-  {
-    position: relative;
-    background-color: blue;
-    cursor: pointer;
-    z-index: 2;
-    top: 0px;
-    left: 0px;
-    transition: all linear 0.5s;
-  }
+#player2
+{
+  position: relative;
+  background-color: blue;
+  cursor: pointer;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  transition: all linear 0.5s;
+}
 
-  /* header image in center(index.html)*/
-  .center 
-  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+/* header image in center(index.html)*/
+.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
   
-  .centertext
-  {
-    text-align: center;
-  }
-  
+.centertext
+{
+  text-align: center;
+}
