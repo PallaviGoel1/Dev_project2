@@ -3,8 +3,7 @@ body
     background-color: rgb(248, 238, 49);
 }
 
-/*media define */
-/*For Mobile*/
+/*media define For Mobile*/
 h1 {font-size: small;}  
 h2 {font-size: small;}
 h3 {font-size: small;}
@@ -59,7 +58,7 @@ ol
   float: left;
 }
 
-/*For Tab*/
+/*Media define For Tab*/
 @media (min-width: 500px) 
 {
   h1 {font-size: medium;}  
@@ -118,6 +117,7 @@ ol
   }
 }
 
+/*Media define for laptop*/
 @media (min-width: 800px) 
 {
   h1 {font-size: xx-large;}  

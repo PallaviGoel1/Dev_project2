@@ -8,6 +8,8 @@ var ch_pos;
 var temp;
 var colPos = 0;
 var rowPos = 0;
+
+//For Desktop
 var x = -610;
 var y = 175;
 var a = 62;
@@ -30,7 +32,7 @@ else if (window.matchMedia("(max-width: 800px)").matches)
     var b = 7;
 }
 
-//This function will be called on click on Roll Dice to generate dice number for respective player
+//This function will be called on click at Roll Dice to generate dice number for respective player
 function Roll_Dice()
 {
     num = Math.floor(Math.random() * 6 + 1);
@@ -50,7 +52,7 @@ function Roll_Dice()
     }
 }
 
-//This function will be called to move players postion on board
+//This function will be used to move players postion on board
 function startgame(player, p, turn, num)
 {
     console.log("p top of startgame", p, "num", num);
@@ -87,6 +89,7 @@ function startgame(player, p, turn, num)
     }
     else
     {
+        //This code is defining the location of all the cells on board
         if ((Math.floor((sum-1)/10))%2 == 0)
         {
             if ((sum%10)==0)
@@ -112,6 +115,8 @@ function startgame(player, p, turn, num)
             console.log("else top =",rowPos);
             console.log("else Left =", colPos);
         }
+
+        //Placing the counter on board as per position calculation in above code
         document.getElementById(`${player}`).style.left = `${colPos}px`;
         document.getElementById(`${player}`).style.top = `${rowPos-turn*a}px`;
     }

@@ -16,7 +16,15 @@ This game is developed using HTML, CSS and JavaScript.
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
-   
+## Deployment Steps
+
+This game website is deployed to Github page and steps for the same are as follows:
+- Goto Github repository
+- Navigate to Settings
+- Goto to Code and Automation -> Pages tab
+- Select Main branch and click on save
+
+Working link to the website is here - https://pallavigoel1.github.io/Pallavi_Project2/
 
 ## Testing 
 
