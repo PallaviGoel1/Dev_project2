@@ -9,7 +9,7 @@ var temp;
 var colPos = 0;
 var rowPos = 0;
 var x = -610;
-var y = 330;
+var y = 170;
 var a = 62;
 var b = 10;
 
@@ -17,14 +17,14 @@ var b = 10;
 if (window.matchMedia("(max-width: 500px)").matches)
 {
     var x = -300;
-    var y = 140;
+    var y = 0;
     var a = 30;
     var b = 4;
 }
 else if (window.matchMedia("(max-width: 800px)").matches)
 {
     var x = -450;
-    var y = 270;
+    var y = 130;
     var a = 45;
     var b = 7;
 }
@@ -77,10 +77,12 @@ function startgame(player, p, turn, num)
 
     if (sum == 100) 
     {
-        
-        if (player == 'player1') {alert("Player1 Won !!")}
-        else if (player == 'player2') {alert("Player2 Won !!")}
-        location.reload();
+        colPos = b - ((sum-1)%10+1)*a;
+        temp = Math.floor((sum-1)/10);
+        rowPos = y-a*temp;document.getElementById(`${player}`).style.left = `${colPos}px`;
+        document.getElementById(`${player}`).style.top = `${rowPos-turn*a}px`;
+        var act = window.confirm(player + " won the game!");
+        next_step(act);
     }
     else
     {
@@ -136,3 +138,8 @@ function check_pos(ch_pos)
         if (ch_pos == 98) {ch_pos = 79};
         return (ch_pos); 
     }
+
+function next_step(act)
+{
+    if (act == true) {location.reload();}
+}    
