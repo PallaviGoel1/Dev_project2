@@ -9,11 +9,11 @@ var temp;
 var colPos = 0;
 var rowPos = 0;
 var x = -610;
-var y = 195;
+var y = 175;
 var a = 62;
 var b = 10;
 
-//Need to adjust as per media changes
+//For mobile device
 if (window.matchMedia("(max-width: 500px)").matches)
 {
     var x = -300;
@@ -21,10 +21,11 @@ if (window.matchMedia("(max-width: 500px)").matches)
     var a = 30;
     var b = 4;
 }
+//For Tablet devices
 else if (window.matchMedia("(max-width: 800px)").matches)
 {
     var x = -450;
-    var y = 130;
+    var y = 132;
     var a = 45;
     var b = 7;
 }
