@@ -6,7 +6,7 @@ Usually it is played by 2 player with rotating turns each. Players move based on
 
 This game is developed using HTML, CSS and JavaScript. 
 
-![Response](assets/images/WhatsApp%20Image%202023-08-23%20at%2011.07.09.jpeg)
+![Response](assets/images/Screenshot%202023-08-23%20120024.png)
 ## Validator Testing 
 
 - HTML
@@ -16,7 +16,7 @@ This game is developed using HTML, CSS and JavaScript.
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
-    ![Response](assets/images/WhatsApp%20Image%202023-08-23%20at%2010.43.30.jpeg)
+    ![Response](assets/images/Screenshot%202023-08-23%20115821.png)
 
 ## Testing 
 
