@@ -6,7 +6,7 @@ Usually it is played by 2 player with rotating turns each. Players move based on
 
 This game is developed using HTML, CSS and JavaScript. 
 
-![Response]
+![Response](assets/images/WhatsApp%20Image%202023-08-23%20at%2011.07.09.jpeg)
 ## Validator Testing 
 
 - HTML
@@ -15,6 +15,7 @@ This game is developed using HTML, CSS and JavaScript.
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+
     ![Response](assets/images/WhatsApp%20Image%202023-08-23%20at%2010.43.30.jpeg)
 
 ## Testing 
