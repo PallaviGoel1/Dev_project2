@@ -55,3 +55,6 @@ There are various ideas I can document right now to improvise this game website 
 3. Update game to be playable by more than 2 players
 4. Allow users to choose color the want to play with on the board
 5. Show player movement gradually
+
+
+[def]: assets/images/screenshot.png
