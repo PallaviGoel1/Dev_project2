@@ -16,7 +16,7 @@ This game is developed using HTML, CSS and JavaScript.
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
-    ![Response](assets/images/Screenshot%202023-08-23%20115821.png)
+   
 
 ## Testing 
 
@@ -33,7 +33,7 @@ I did perform following tests on this game:
 
 3. Screen Test: Pages are correctly visible in case of screen size changes - To be fixed
 
-
+ ![Response](assets/images/Screenshot%202023-08-23%20115821.png)
 ## Credits 
 
 I fetched help for coding from tutorial provided by Code Institute, W3 Schools and Slack community.
