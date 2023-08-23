@@ -77,7 +77,7 @@ function startgame(player, p, turn, num)
 
     if (sum == 100) 
     {
-        /*winSound.play()*/
+        
         if (player == 'player1') {alert("Player1 Won !!")}
         else if (player == 'player2') {alert("Player2 Won !!")}
         location.reload();
