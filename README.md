@@ -29,9 +29,12 @@ I did perform following tests on this game:
         ii- Positions of ladders were not correct in some cases - Fixed the position change as per ladder position in all the cases
         iii - Text for player1 and Player2 were not changing after each turn - Fixed that in text
 
-2. GUI Test: Verified all the objects on screens are correctly displayed and readable
+2. GUI Test: Verified all the objects on screens are correctly displayed and readable. 
 
-3. Screen Test: Pages are correctly visible in case of screen size changes - To be fixed
+3. Screen Test: Following issues noticed
+    a- Players movement on mobile was going out of board - Fixed that
+    b- Logo on index page is stretching on different screens - To be fixed
+    c- Pages are correctly visible in case of screen size changes - To be fixed
 
  ![Response](assets/images/Screenshot%202023-08-23%20115821.png)
 ## Credits 
